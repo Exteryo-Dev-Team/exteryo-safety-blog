@@ -96,17 +96,4 @@ params:
     - name: github
       url: "https://github.com/"
 
-menu:
-  main:
-    - identifier: categories
-      name: categories
-      url: /categories/
-      weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
-      weight: 20
-    - identifier: example
-      name: example
-      url: /example.html
-      weight: 30
+
