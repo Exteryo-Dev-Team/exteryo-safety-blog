@@ -1,7 +1,19 @@
-baseURL: "https://exteryo-dev-team.github.io/exteryo-safety-blog/"
-languageCode: "en-us"
-title: "Exteryo Safety Blog"
-theme: "PaperMod"
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    title: "Exteryo Safety Blog"
+    params:
+      description: "Engineering and safety insights from the Exteryo team."
+  it:
+    languageName: "Italiano"
+    weight: 2
+    title: "Exteryo Safety Blog (IT)"
+    params:
+      description: "Approfondimenti su ingegneria e sicurezza dal team Exteryo."
+
 
 enableRobotsTXT: true
 buildDrafts: false
