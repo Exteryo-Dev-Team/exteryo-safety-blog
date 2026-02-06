@@ -1,0 +1,6 @@
+title: Exteryo Safety Blog
+description: Engineering and safety insights from the Exteryo team.
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
