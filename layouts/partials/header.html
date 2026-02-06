@@ -55,18 +55,14 @@
                         {{- if (not site.Params.disableLangToggle) }}
                         {{- if .IsTranslated }}
                         <div class="lang-switch">
-                            <span class="curr-lang">
+                            {{- range .AllTranslations }}
+                            {{- if ne $.Lang .Lang }}
+                            <a href="{{ .Permalink }}" title="{{ .Language.LanguageName | default .Lang | title }}"
+                                aria-label="{{ .Language.LanguageName | default .Lang | title }}">
                                 {{ .Language.LanguageName | default .Lang | title }}
-                            </span>
-                            <ul class="lang-list">
-                                {{- range .AllTranslations }}
-                                <li>
-                                    <a href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
-                                        {{ .Language.LanguageName | default .Lang | title }}
-                                    </a>
-                                </li>
-                                {{- end }}
-                            </ul>
+                            </a>
+                            {{- end }}
+                            {{- end }}
                         </div>
                         {{- end }}
                         {{- end }}
