@@ -1,6 +1,8 @@
 outputs:
   home: ["HTML", "RSS", "JSON"]
 
+theme: "PaperMod"
+
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
 languages:
