@@ -1,5 +1,6 @@
 {{- with .cxt}} {{/* Apply proper context from dict */}}
 {{- if (and .Params.cover.image (not $.isHidden)) }}
+{{- if not $.IsSingle }}
 <figure class="entry-cover">
     {{- $loading := cond $.IsSingle "eager" "lazy" }}
     {{- $addLink := (and site.Params.cover.linkFullImages $.IsSingle) }}
@@ -66,5 +67,6 @@
     {{- end }}
     {{- end }}
 </figure>
+{{- end }}
 {{- end }}{{/* End image */}}
 {{- end -}}{{/* End context */ -}}

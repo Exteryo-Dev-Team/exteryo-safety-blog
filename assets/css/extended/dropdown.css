@@ -53,3 +53,14 @@
 [data-theme="dark"] .cover-dual .cover-light {
     display: none;
 }
+
+/* Homepage/List Cover Image Styling */
+.entry-cover {
+    text-align: center;
+}
+
+.entry-cover img {
+    max-width: 50%;
+    margin: 0 auto;
+    display: inline-block;
+}
