@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="home">
+
+    <ul class="post-list">
+        {% for post in site.posts %}
+        <li>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <h3>
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                    {{ post.title | escape }}
+                </a>
+            </h3>
+            {% if post.cover %}
+            <div class="post-cover-preview">
+                <img src="{{ post.cover | relative_url }}" alt="Cover image for {{ post.title }}">
+            </div>
+            {% endif %}
+            <div class="post-excerpt">
+                {{ post.excerpt }}
+            </div>
+            <a class="read-more" href="{{ post.url | relative_url }}">Read more &rarr;</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>
