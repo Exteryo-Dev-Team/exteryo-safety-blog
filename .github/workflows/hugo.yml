@@ -35,7 +35,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
+          submodules: true  # Fetch submodules (true or recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
