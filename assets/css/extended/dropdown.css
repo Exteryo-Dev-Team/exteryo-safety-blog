@@ -29,11 +29,11 @@
 }
 
 /* Dark Mode Override */
-body.dark .logo-dark {
+[data-theme="dark"] .logo-dark {
     display: block;
 }
 
-body.dark .logo-light {
+[data-theme="dark"] .logo-light {
     display: none;
 }
 
@@ -46,10 +46,10 @@ body.dark .logo-light {
     display: block;
 }
 
-body.dark .cover-dual .cover-dark {
+[data-theme="dark"] .cover-dual .cover-dark {
     display: block;
 }
 
-body.dark .cover-dual .cover-light {
+[data-theme="dark"] .cover-dual .cover-light {
     display: none;
 }
