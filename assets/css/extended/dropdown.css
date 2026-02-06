@@ -13,3 +13,25 @@
 .lang-switch a:hover {
     text-decoration: underline;
 }
+/* Dual Logo Toggling */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-dark {
+    display: none;
+}
+
+.logo-light {
+    display: block;
+}
+
+/* Dark Mode Override */
+body.dark .logo-dark {
+    display: block;
+}
+
+body.dark .logo-light {
+    display: none;
+}
