@@ -2,9 +2,8 @@
 title: "New Feature: Customer Assignment for Inspectors 🚀"
 date: 2026-02-06T13:45:00+01:00
 draft: false
-cover:
-    image: assets/images/logo-colored.svg
-    imageDark: assets/images/logo-white.svg
+    image: assets/images/new_color_logo.png
+    imageDark: assets/images/new_white_logo_logo.png
     alt: "User Management"
     relative: false
 ---

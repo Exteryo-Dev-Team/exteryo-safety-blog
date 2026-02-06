@@ -4,12 +4,6 @@
             {{- $label_text := (site.Params.label.text | default site.Title) }}
             {{- if site.Title }}
             <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
-                <div class="logo-container">
-                    <img class="logo-light" src="/assets/images/logo-colored.svg" alt="logo"
-                        height="{{- site.Params.label.iconHeight | default " 30" -}}">
-                    <img class="logo-dark" src="/assets/images/logo-white.svg" alt="logo"
-                        height="{{- site.Params.label.iconHeight | default " 30" -}}">
-                </div>
                 {{- $label_text -}}
             </a>
             {{- end }}
