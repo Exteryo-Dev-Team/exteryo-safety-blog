@@ -1,46 +1,15 @@
 .lang-switch {
-    position: relative;
     display: inline-block;
     margin-left: 10px;
-}
-
-.lang-switch .curr-lang {
-    cursor: pointer;
-    padding: 5px;
     font-weight: 500;
 }
 
-.lang-switch .lang-list {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 100%;
-    background: var(--entry);
-    border: 1px solid var(--border);
-    border-radius: 5px;
-    list-style: none;
-    padding: 5px 0;
-    margin: 0;
-    min-width: 100px;
-    z-index: 999;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.lang-switch:hover .lang-list {
-    display: block;
-}
-
-.lang-switch .lang-list li {
-    padding: 5px 15px;
-    white-space: nowrap;
-}
-
-.lang-switch .lang-list li a {
+.lang-switch a {
     color: var(--primary);
     text-decoration: none;
-    display: block;
+    cursor: pointer;
 }
 
-.lang-switch .lang-list li:hover {
-    background: var(--tertiary);
+.lang-switch a:hover {
+    text-decoration: underline;
 }
