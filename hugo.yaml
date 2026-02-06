@@ -1,6 +1,5 @@
-baseURL: "https://exteryo-dev-team.github.io/exteryo-safety-blog/"
-# outputs:
-#   home: ["HTML", "RSS", "JSON"]
+outputs:
+  home: ["HTML", "RSS", "JSON"]
 
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
