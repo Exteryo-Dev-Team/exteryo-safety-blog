@@ -9,7 +9,7 @@ words_per_minute: 200
 remote_theme: jekyller/jasper2
 
 # Website info
-baseurl: /exteryo-safety-blog
+baseurl: /exteryo-safety-blog/
 url: https://Exteryo-Dev-Team.github.io
 title: Exteryo Safety Blog
 description: Engineering and safety insights from the Exteryo team.
