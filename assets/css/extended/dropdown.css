@@ -13,6 +13,7 @@
 .lang-switch a:hover {
     text-decoration: underline;
 }
+
 /* Dual Logo Toggling */
 .logo-container {
     display: flex;
@@ -33,5 +34,22 @@ body.dark .logo-dark {
 }
 
 body.dark .logo-light {
+    display: none;
+}
+
+/* Dual Cover Support */
+.cover-dual .cover-dark {
+    display: none;
+}
+
+.cover-dual .cover-light {
+    display: block;
+}
+
+body.dark .cover-dual .cover-dark {
+    display: block;
+}
+
+body.dark .cover-dual .cover-light {
     display: none;
 }

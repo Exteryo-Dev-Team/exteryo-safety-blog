@@ -3,7 +3,8 @@ title: "Nuova Funzionalità: Assegnazione Clienti agli Ispettori 🚀"
 date: 2026-02-06T13:45:00+01:00
 draft: false
 cover:
-    image: assets/images/blog-cover.png?v=2 # Updated to existing asset
+    image: assets/images/logo-colored.svg
+    imageDark: assets/images/logo-white.svg # Updated to existing asset
     alt: "Gestione Utenti"
     relative: false
 ---
