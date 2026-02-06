@@ -43,6 +43,7 @@
         {{- else }}{{/* Unprocessable image or responsive images disabled */}}
         <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}">
         {{- end }}
+        {{- else }}
         {{- if .Params.cover.imageDark }}
         <div class="cover-dual">
             <img class="cover-light" loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}">
@@ -51,6 +52,7 @@
         </div>
         {{- else }}
         <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}">
+        {{- end }}
         {{- end }}
 
         {{- if $addLink }}
