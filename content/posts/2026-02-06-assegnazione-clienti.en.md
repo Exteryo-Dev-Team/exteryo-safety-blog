@@ -3,7 +3,7 @@ title: "New Feature: Customer Assignment for Inspectors 🚀"
 date: 2026-02-06T13:45:00+01:00
 draft: false
 cover:
-    image: assets/images/placeholder.png
+    image: assets/images/blog-cover.png
     alt: "User Management"
     relative: false
 ---

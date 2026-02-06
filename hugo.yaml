@@ -40,7 +40,7 @@ params:
   keywords: [Blog, Engineering, Safety]
   author: Me
   # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  images: ["assets/images/blog-cover.png"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -72,7 +72,7 @@ params:
 
   label:
     text: "Exteryo Safety Blog"
-    icon: /apple-touch-icon.png
+    icon: assets/images/blog-icon.png
     iconHeight: 35
 
   # profile-mode
