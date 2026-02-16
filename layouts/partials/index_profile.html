@@ -8,14 +8,15 @@
         {{- $img = resources.Get .imageUrl }}
         {{- end }}
         {{- if $img }}
-        {{- /* Resize logic if needed, keeping it simple for now as per previous working state */ -}}
+        {{- /* Resize logical */ -}}
         {{- $img = $img.Resize "150x" }}
-        <img class="image-light" draggable="false" src="{{ $img.Permalink }}" alt="{{ .imageTitle | default " profile
-            image" }}" title="{{ .imageTitle }}" height="{{ $img.Height }}" width="{{ $img.Width }}" />
+        <img class="image-light" draggable="false" src="{{ $img.Permalink }}"
+            alt='{{ .imageTitle | default "profile_image" }}' title='{{ .imageTitle }}' height="{{ $img.Height }}"
+            width="{{ $img.Width }}" />
         {{- else }}
-        <img class="image-light" draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "
-            profile image" }}" title="{{ .imageTitle }}" height="{{ .imageHeight | default 150 }}"
-            width="{{ .imageWidth | default 150 }}" />
+        <img class="image-light" draggable="false" src="{{ .imageUrl | absURL }}"
+            alt='{{ .imageTitle | default "profile_image" }}' title='{{ .imageTitle }}'
+            height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
         {{- end }}
         {{- end }}
 
@@ -27,16 +28,15 @@
         {{- end }}
         {{- if $imgDark }}
         {{- $imgDark = $imgDark.Resize "150x" }}
-        <img class="image-dark" draggable="false" src="{{ $imgDark.Permalink }}" alt="{{ .imageTitle | default " profile
-            image" }}" title="{{ .imageTitle }}" height="{{ $imgDark.Height }}" width="{{ $imgDark.Width }}" />
+        <img class="image-dark" draggable="false" src="{{ $imgDark.Permalink }}"
+            alt='{{ .imageTitle | default "profile_image" }}' title='{{ .imageTitle }}' height="{{ $imgDark.Height }}"
+            width="{{ $imgDark.Width }}" />
         {{- else }}
-        <img class="image-dark" draggable="false" src="{{ .imageDarkUrl | absURL }}" alt="{{ .imageTitle | default "
-            profile image" }}" title="{{ .imageTitle }}" height="{{ .imageHeight | default 150 }}"
-            width="{{ .imageWidth | default 150 }}" />
+        <img class="image-dark" draggable="false" src="{{ .imageDarkUrl | absURL }}"
+            alt='{{ .imageTitle | default "profile_image" }}' title='{{ .imageTitle }}'
+            height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
         {{- end }}
         {{- end }}
-
-        {{/* Explicitly removed the H1 and Span that rendered Title/Subtitle from here */}}
 
         {{- with .buttons }}
         <div class="buttons">
