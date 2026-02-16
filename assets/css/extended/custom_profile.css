@@ -1,10 +1,18 @@
 /* Override profile mode height to allow content below it */
 .main .profile {
     min-height: auto !important;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
+    /* Reduced margin */
+    padding-top: 1rem;
 }
 
 /* Ensure profile image is not too large if not handled */
 .profile img {
-    margin-bottom: 1rem;
+    margin-bottom: 0px;
+    /* Remove bottom margin from image */
+}
+
+/* Hide social icons just in case they are rendered elsewhere in profile */
+.profile .social-icons {
+    display: none;
 }

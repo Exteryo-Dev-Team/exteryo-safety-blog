@@ -84,7 +84,7 @@ params:
     title: "" # Hide title as it is in the logo
     subtitle: "" # Hide subtitle
     imageUrl: "assets/images/new_color_logo.png"
-    imageWidth: 300 # Adjust width as needed, logo in screenshot seemed significant
+    imageWidth: 150 # Reduced size as requested
     imageHeight: auto
     buttons: []
 
