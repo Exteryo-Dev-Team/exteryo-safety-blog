@@ -1,5 +1,5 @@
 ---
-title: "Aggiornamento Prodotto: Arriva la Gestione Sollevamenti! 🏗️"
+title: "Aggiornamento Prodotto: Gestione Sollevamenti e Sincronizzazione LIGHT 🏗️"
 date: 2026-02-16T23:30:00+01:00
 draft: false
 cover:
@@ -9,21 +9,27 @@ cover:
     relative: false
 ---
 
-In questo aggiornamento introduciamo un modulo completamente nuovo per la piattaforma Digital Safety, progettato per semplificare e centralizzare la gestione degli apparati di sollevamento.
+In questo aggiornamento introduciamo un'importante novità per la piattaforma Digital Safety, focalizzata sull'integrazione e la sincronizzazione dei dati.
 
 ## 🏗️ Nuovo Modulo: Gestione Sollevamenti
 
-La grande novità di questa release è il modulo **Gestione Sollevamenti (Lifts Management)**. Questo strumento colma una lacuna importante, offrendo funzionalità dedicate per il controllo e la manutenzione di gru, paranchi e altri dispositivi di sollevamento.
+Il modulo **Gestione Sollevamenti (Lifts Management)** è stato introdotto con un obiettivo specifico: **abilitare la sincronizzazione dei dati con le licenze LIGHT**.
 
-Le novità principali comprendono:
+Questo aggiornamento è fondamentale per garantire che le informazioni relative agli apparati di sollevamento siano perfettamente allineate tra la licenza principale e le utenze LIGHT.
 
-*   **Registro Prodotti Completo**: Un archivio digitale centralizzato per tutti i tuoi apparati di sollevamento.
-*   **Gestione Ispezioni e Riparazioni**: Strumenti integrati per monitorare scadenze, registrare esiti di ispezione e gestire interventi di manutenzione.
-*   **Integrazione Light License**: Condivisione fluida dei dati (modelli e produttori) tra le diverse sedi aziendali e i livelli di licenza.
+### Cosa permette di fare?
+
+Grazie a questa nuova funzionalità, è ora possibile sincronizzare verso le licenze LIGHT:
+
+*   **Registro Prodotti**: L'anagrafica completa e aggiornata dei dispositivi.
+*   **Stato Ispezioni**: La visibilità sugli esiti e le scadenze dei controlli.
+*   **Storico Interventi**: I dettagli sulle riparazioni e le manutenzioni registrate.
+
+Questa integrazione assicura che tutti gli attori coinvolti abbiano accesso agli stessi dati in tempo reale, semplificando la gestione condivisa della sicurezza.
 
 ## 🌍 Espansione Internazionale
 
-Abbiamo fatto un passo avanti significativo nell'internazionalizzazione della piattaforma. Il nuovo modulo è stato lanciato con supporto completo per 6 lingue:
+Contestualmente al rilascio del nuovo modulo, abbiamo esteso il supporto linguistico della piattaforma. La Gestione Sollevamenti è disponibile fin da subito in 8 lingue:
 
 *   🇮🇹 Italiano (it-it)
 *   🇬🇧 Inglese (en, en-us)
@@ -34,15 +40,10 @@ Abbiamo fatto un passo avanti significativo nell'internazionalizzazione della pi
 *   🇵🇹 Portoghese (pt-pt)
 *   🇸🇪 Svedese (sv-se)
 
-Oltre alle nuove traduzioni, abbiamo uniformato la terminologia tecnica in tutte le lingue supportate per garantire coerenza e chiarezza.
-
 ## 🔧 Miglioramenti Tecnici
 
-Dietro le quinte, abbiamo ottimizzato la struttura del codice per garantire stabilità e prestazioni:
+L'aggiornamento include anche interventi di ottimizzazione del sistema:
 
-*   **Refactoring Backend**: Implementazione di nuove API dedicate per la gestione delle ispezioni e delle riparazioni dei sollevamenti.
-*   **Ottimizzazione Frontend**: Migliorata la struttura dei menu laterali e la gestione delle rotte per una navigazione più fluida.
-*   **Correzione Bug**: Risolti diversi problemi di visualizzazione nelle tabelle e nei registri.
-
----
-*Continuiamo a lavorare per rendere la gestione della sicurezza sempre più efficiente e integrata.*
+*   **Sincronizzazione Dati**: Implementazione delle logiche di backend per il trasferimento sicuro e selettivo dei dati alle licenze LIGHT.
+*   **Navigazione Ottimizzata**: Miglioramenti alla struttura dei menu e delle rotte per una migliore esperienza utente.
+*   **Refactoring e Stabilità**: Interventi sul codice per garantire prestazioni elevate e correggere imperfezioni visive.

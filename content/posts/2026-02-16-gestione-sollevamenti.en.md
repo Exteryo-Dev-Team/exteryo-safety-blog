@@ -1,5 +1,5 @@
 ---
-title: "Product Update: Lifts Management is Here! 🏗️"
+title: "Product Update: Lifts Management and LIGHT Synchronization 🏗️"
 date: 2026-02-16T23:30:00+01:00
 draft: false
 cover:
@@ -9,21 +9,27 @@ cover:
     relative: false
 ---
 
-In this update, we introduce a completely new module for the Digital Safety platform, designed to simplify and centralize the management of lifting equipment.
+In this update, we introduce an important new feature for the Digital Safety platform, focused on data integration and synchronization.
 
 ## 🏗️ New Module: Lifts Management
 
-The big news of this release is the **Lifts Management** module. This tool fills an important gap, offering dedicated features for the control and maintenance of cranes, hoists, and other lifting devices.
+The **Lifts Management** module has been introduced with a specific goal: **to enable data synchronization with LIGHT licenses**.
 
-Key features include:
+This update is fundamental to ensure that information related to lifting equipment is perfectly aligned between the main license and LIGHT users.
 
-*   **Complete Product Registry**: A centralized digital archive for all your lifting equipment.
-*   **Inspection and Repair Management**: Integrated tools to monitor deadlines, record inspection results, and manage maintenance interventions.
-*   **Light License Integration**: Seamless data sharing (models and manufacturers) between different company locations and license levels.
+### What does it allow you to do?
+
+Thanks to this new functionality, it is now possible to synchronize to LIGHT licenses:
+
+*   **Product Registry**: The complete and updated registry of devices.
+*   **Inspection Status**: Visibility on results and deadlines of checks.
+*   **Intervention History**: Details on recorded repairs and maintenance.
+
+This integration ensures that all actors involved have access to the same data in real-time, simplifying shared safety management.
 
 ## 🌍 International Expansion
 
-We have made a significant step forward in the platform's internationalization. The new module has been launched with full support for 6 languages:
+Along with the release of the new module, we have extended the platform's language support. Lifts Management is immediately available in 8 languages:
 
 *   🇮🇹 Italian (it-it)
 *   🇬🇧 English (en, en-us)
@@ -34,15 +40,10 @@ We have made a significant step forward in the platform's internationalization. 
 *   🇵🇹 Portuguese (pt-pt)
 *   🇸🇪 Swedish (sv-se)
 
-In addition to new translations, we have standardized technical terminology across all supported languages to ensure consistency and clarity.
-
 ## 🔧 Technical Improvements
 
-Behind the scenes, we have optimized the code structure to ensure stability and performance:
+The update also includes system optimization interventions:
 
-*   **Backend Refactoring**: Implementation of new dedicated APIs for managing lift inspections and repairs.
-*   **Frontend Optimization**: Improved side menu structure and route management for smoother navigation.
-*   **Bug Fixes**: Resolved several display issues in tables and registers.
-
----
-*We continue to work to make safety management increasingly efficient and integrated.*
+*   **Data Synchronization**: Implementation of backend logic for secure and selective transfer of data to LIGHT licenses.
+*   **Optimized Navigation**: Improvements to menu structure and routes for a better user experience.
+*   **Refactoring and Stability**: Code interventions to ensure high performance and correct visual imperfections.
