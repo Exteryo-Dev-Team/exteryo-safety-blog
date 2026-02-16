@@ -1,0 +1,10 @@
+/* Override profile mode height to allow content below it */
+.main .profile {
+    min-height: auto !important;
+    margin-bottom: 2rem;
+}
+
+/* Ensure profile image is not too large if not handled */
+.profile img {
+    margin-bottom: 1rem;
+}
