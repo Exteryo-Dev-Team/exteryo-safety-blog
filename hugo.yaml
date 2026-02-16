@@ -53,7 +53,7 @@ params:
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
-  disableSpecial1stPost: false
+  disableSpecial1stPost: true
   disableScrollToTop: false
   comments: false
   hidemeta: false
@@ -77,18 +77,13 @@ params:
 
   # profile-mode
   profileMode:
-    enabled: false # set to true for profile mode on homepage
-    title: Exteryo Safety Blog
-    subtitle: "Engineering & Safety"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: my image
-    buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
+    enabled: true
+    title: "" # Hide title as it is in the logo
+    subtitle: "" # Hide subtitle
+    imageUrl: "assets/images/new_color_logo.png"
+    imageWidth: 300 # Adjust width as needed, logo in screenshot seemed significant
+    imageHeight: auto
+    buttons: []
 
   socialIcons:
     - name: twitter
