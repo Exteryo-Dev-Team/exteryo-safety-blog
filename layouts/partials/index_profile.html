@@ -1,39 +1,42 @@
 <div class="profile">
     {{- with site.Params.profileMode }}
     <div class="profile_inner">
+        {{- /* Logic for Light Mode Image */ -}}
         {{- if .imageUrl -}}
         {{- $img := "" }}
         {{- if not (urls.Parse .imageUrl).IsAbs }}
         {{- $img = resources.Get .imageUrl }}
         {{- end }}
         {{- if $img }}
-        {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
-        {{- if hugo.IsExtended -}}
-        {{- $processableFormats = $processableFormats | append "webp" -}}
-        {{- end -}}
-        {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
-        {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
-        {{- if (not (and (not .imageHeight) (not .imageWidth))) }}
-        {{- $img = $img.Resize (printf "%dx%d" .imageWidth .imageHeight) }}
-        {{- else if .imageHeight }}
-        {{- $img = $img.Resize (printf "x%d" .imageHeight) }}
-        {{ else if .imageWidth }}
-        {{- $img = $img.Resize (printf "%dx" .imageWidth) }}
-        {{ else }}
-        {{- $img = $img.Resize "150x150" }}
-        {{- end }}
-        {{- end }}
-        <img draggable="false" src="{{ $img.Permalink }}" alt="{{ .imageTitle | default " profile image" }}"
-            title="{{ .imageTitle }}" height="{{ .imageHeight | default 150 }}"
-            width="{{ .imageWidth | default 150 }}" />
+        {{- /* Resize logic if needed, keeping it simple for now as per previous working state */ -}}
+        {{- $img = $img.Resize "150x" }}
+        <img class="image-light" draggable="false" src="{{ $img.Permalink }}" alt="{{ .imageTitle | default " profile
+            image" }}" title="{{ .imageTitle }}" height="{{ $img.Height }}" width="{{ $img.Width }}" />
         {{- else }}
-        <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default " profile image" }}"
-            title="{{ .imageTitle }}" height="{{ .imageHeight | default 150 }}"
+        <img class="image-light" draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "
+            profile image" }}" title="{{ .imageTitle }}" height="{{ .imageHeight | default 150 }}"
             width="{{ .imageWidth | default 150 }}" />
         {{- end }}
         {{- end }}
 
-        {{/* Removed title, subtitle, and social icons as requested by user */}}
+        {{- /* Logic for Dark Mode Image */ -}}
+        {{- if .imageDarkUrl -}}
+        {{- $imgDark := "" }}
+        {{- if not (urls.Parse .imageDarkUrl).IsAbs }}
+        {{- $imgDark = resources.Get .imageDarkUrl }}
+        {{- end }}
+        {{- if $imgDark }}
+        {{- $imgDark = $imgDark.Resize "150x" }}
+        <img class="image-dark" draggable="false" src="{{ $imgDark.Permalink }}" alt="{{ .imageTitle | default " profile
+            image" }}" title="{{ .imageTitle }}" height="{{ $imgDark.Height }}" width="{{ $imgDark.Width }}" />
+        {{- else }}
+        <img class="image-dark" draggable="false" src="{{ .imageDarkUrl | absURL }}" alt="{{ .imageTitle | default "
+            profile image" }}" title="{{ .imageTitle }}" height="{{ .imageHeight | default 150 }}"
+            width="{{ .imageWidth | default 150 }}" />
+        {{- end }}
+        {{- end }}
+
+        {{/* Explicitly removed the H1 and Span that rendered Title/Subtitle from here */}}
 
         {{- with .buttons }}
         <div class="buttons">

@@ -2,17 +2,31 @@
 .main .profile {
     min-height: auto !important;
     margin-bottom: 0.5rem;
-    /* Reduced margin */
     padding-top: 1rem;
 }
 
-/* Ensure profile image is not too large if not handled */
+/* Ensure profile image is a rectangle, not a circle */
 .profile img {
     margin-bottom: 0px;
-    /* Remove bottom margin from image */
+    border-radius: 0 !important;
+    /* Force rectangle */
 }
 
-/* Hide social icons just in case they are rendered elsewhere in profile */
+/* Hide social icons just in case */
 .profile .social-icons {
     display: none;
+}
+
+/* Support for dual images (light/dark) */
+.profile .profile_inner .image-dark {
+    display: none;
+}
+
+/* When dark mode is active (PaperMod usually adds a class to body, often 'dark') */
+body.dark .profile .profile_inner .image-light {
+    display: none;
+}
+
+body.dark .profile .profile_inner .image-dark {
+    display: inline-block;
 }
