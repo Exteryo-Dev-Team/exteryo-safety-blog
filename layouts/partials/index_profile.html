@@ -8,8 +8,10 @@
         {{- $img = resources.Get .imageUrl }}
         {{- end }}
         {{- if $img }}
-        {{- /* Resize logical */ -}}
-        {{- $img = $img.Resize "150x" }}
+        {{- /* Resize logical - removed hardcoded resize to respect config */ -}}
+        {{- if $img.Width -}}
+        {{- /* Optional: Resize if it is huge, but let's trust the config width or use original if reasonable */ -}}
+        {{- end -}}
         <img class="image-light" draggable="false" src="{{ $img.Permalink }}"
             alt='{{ .imageTitle | default "profile_image" }}' title='{{ .imageTitle }}' height="{{ $img.Height }}"
             width="{{ $img.Width }}" />
@@ -27,7 +29,7 @@
         {{- $imgDark = resources.Get .imageDarkUrl }}
         {{- end }}
         {{- if $imgDark }}
-        {{- $imgDark = $imgDark.Resize "150x" }}
+        {{- /* Resize logical - removed hardcoded resize */ -}}
         <img class="image-dark" draggable="false" src="{{ $imgDark.Permalink }}"
             alt='{{ .imageTitle | default "profile_image" }}' title='{{ .imageTitle }}' height="{{ $imgDark.Height }}"
             width="{{ $imgDark.Width }}" />

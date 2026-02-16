@@ -1,7 +1,8 @@
 /* Override profile mode height to allow content below it */
 .main .profile {
     min-height: auto !important;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    /* Increased margin for better spacing */
     padding-top: 1rem;
 }
 
@@ -18,15 +19,20 @@
 }
 
 /* Support for dual images (light/dark) */
+/* Default: hide dark image, show light image */
 .profile .profile_inner .image-dark {
     display: none;
 }
 
-/* When dark mode is active (PaperMod usually adds a class to body, often 'dark') */
-body.dark .profile .profile_inner .image-light {
+.profile .profile_inner .image-light {
+    display: inline-block;
+}
+
+/* When dark mode is active (html[data-theme="dark"]) */
+[data-theme="dark"] .profile .profile_inner .image-light {
     display: none;
 }
 
-body.dark .profile .profile_inner .image-dark {
+[data-theme="dark"] .profile .profile_inner .image-dark {
     display: inline-block;
 }

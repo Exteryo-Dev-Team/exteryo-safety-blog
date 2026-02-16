@@ -85,7 +85,7 @@ params:
     subtitle: "" # Hide subtitle
     imageUrl: "assets/images/new_color_logo.png"
     imageDarkUrl: "assets/images/new_white_logo_logo.png"
-    imageWidth: 150 # Reduced size as requested
+    imageWidth: 300 # Reverted to original size as requested
     imageHeight: auto
     buttons: []
 
