@@ -1,5 +1,5 @@
 ---
-title: "Search and Export Issues Resolved: The Platform is Now Even Smoother!"
+title: "🚀 New Update: Smarter Excel Exports and Perfect Translations"
 date: 2026-02-23T12:21:59+01:00
 draft: false
 cover:
@@ -9,20 +9,23 @@ cover:
     relative: false
 ---
 
-Today we released a new update to make the platform even more stable and intuitive to use, especially when searching for and downloading information.
+We are constantly working behind the scenes to ensure that every tool on our platform is smooth, reliable, and ready to help you in your daily work. This week we focused on one of the most frequently used features: exporting data to Excel.
 
-We identified and resolved two small "hiccups" that could occur during normal use:
+We gathered your feedback and looked into some imperfections that were slowing down the experience. Here are the new features we introduced with the latest update!
 
-### 1. Foolproof Excel Exports (even with no results)
-Before today, if you tried to export an Excel file after running a search that produced no results (no data found), the system would crash and show a technical error. This happened because the "engine" that creates the Excel file stubbornly tried to insert columns into a completely empty sheet.
+### 🌍 The right language, always
+Have you ever downloaded a report and found the column headers in another language, or worse, read strange technical codes (like `excel.ppe-model`) instead of the real names? We did a major overhaul of our internal vocabulary system. We now guarantee total language coverage across 9 different languages. Whichever Excel report you download, the columns will perfectly speak your language.
 
-**What we did:** Now we have taught the system to handle these situations. If your search produces no results, the system will no longer crash, but will let you download a perfectly formatted Excel file containing only the header row, ready to be used.
+### 🎯 Pinpoint precision filters
+The goal of an export is to take offline exactly what you are viewing on screen. We have perfected the engine that processes reports: now, when you apply advanced filters or do specific searches on the platform, the generated Excel file will reflect your results with absolute precision, without wasting your time sorting data later.
 
-### 2. Smarter Search for Compound Data (like "Name and Surname")
-We noticed that, in some screens, when searching for specific keywords (for example, a worker's first or last name), the system would return zero results, even when the worker was actually present.
-
-**What we did:** The problem was due to an overly rigid check in our internal search engine, which "ignored" fields created by merging multiple pieces of information (like the field that merges "Name" and "Surname"). We have removed this limit: now the search correctly "reads" combined data as well. This way, your searches will always be accurate and you will no longer risk ending up with empty screens for no reason.
+### 🛡️ Bulletproof downloads (No more "twin" columns)
+Sometimes, downloading an Excel file would mysteriously fail. Upon investigating, we discovered that the "culprit" was an identity conflict: in some languages, different terms were translated with the exact same word (for example, two columns both named "Name" or "Email"), confusing the file generator. We solved this puzzle by linguistically differentiating every single field. The result? Goodbye to jams: Excel file generation is now solid, stable, and crash-proof.
 
 ---
 
-We continue to work to make your daily work simpler and uninterrupted. Enjoy using the platform!
+**In summary**
+
+Behind this update are thousands of lines of code, but for you it translates into something very simple: fast, reliable, and easy-to-read Excel exports, in whatever language you choose to work with.
+
+Keep sending us your feedback! The next update is already in the pipeline. 🛠️

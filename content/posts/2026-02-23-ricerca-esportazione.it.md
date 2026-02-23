@@ -1,5 +1,5 @@
 ---
-title: "Risolti i problemi di ricerca ed esportazione: la piattaforma ora è ancora più fluida!"
+title: "🚀 Nuovo Aggiornamento: Esportazioni Excel più intelligenti e traduzioni perfette"
 date: 2026-02-23T12:21:59+01:00
 draft: false
 cover:
@@ -9,20 +9,23 @@ cover:
     relative: false
 ---
 
-Oggi abbiamo rilasciato un nuovo aggiornamento per rendere la piattaforma ancora più stabile e intuitiva da usare, specialmente quando si tratta di cercare le informazioni e scaricarle.
+Lavoriamo costantemente dietro le quinte per assicurarci che ogni strumento della nostra piattaforma sia fluido, affidabile e pronto ad aiutarti nel tuo lavoro quotidiano. Questa settimana ci siamo concentrati su una delle funzionalità più utilizzate in assoluto: l'esportazione dei dati in Excel.
 
-Abbiamo individuato e risolto due piccoli "intoppi" che potevano verificarsi durante il normale utilizzo:
+Abbiamo raccolto i vostri feedback e abbiamo esaminato alcune imperfezioni che rallentavano l'esperienza. Ecco le novità che abbiamo introdotto con l'ultimo aggiornamento!
 
-### 1. Esportazioni Excel a prova di errore (anche senza risultati)
-Prima di oggi, se provavi a esportare un file Excel dopo aver fatto una ricerca che non produceva alcun risultato (nessun dato trovato), il sistema si bloccava mostrando un errore tecnico. Questo accadeva perché il "motore" che crea l'Excel provava testardamente a inserire delle colonne in un foglio che era completamente vuoto.
+### 🌍 La lingua giusta, sempre
+Vi è mai capitato di scaricare un report e trovare le intestazioni delle colonne in un'altra lingua, o peggio, di leggere strani codici tecnici (come `excel.ppe-model`) al posto dei nomi reali? Abbiamo fatto un'importante revisione del nostro sistema di vocabolario interno. Ora garantiamo una copertura linguistica totale su ben 9 lingue diverse. Qualsiasi report Excel scaricherete, le colonne parleranno perfettamente la vostra lingua.
 
-**Cosa abbiamo fatto:** Ora abbiamo insegnato al sistema a gestire queste situazioni. Se la tua ricerca non produce risultati, il sistema non andrà più in errore, ma ti farà scaricare un file Excel perfettamente formattato contenente solo la riga delle intestazioni, pronto per essere utilizzato.
+### 🎯 Filtri precisi al millimetro
+L'obiettivo di un'esportazione è portarsi offline esattamente ciò che si sta visualizzando a schermo. Abbiamo perfezionato il motore che elabora i report: ora, quando applicate filtri avanzati o fate ricerche specifiche nella piattaforma, il file Excel generato rifletterà i vostri risultati con assoluta precisione, senza farvi perdere tempo a riordinare i dati in un secondo momento.
 
-### 2. Ricerca più intelligente per dati composti (come "Nome e Cognome")
-Abbiamo notato che, in alcune schermate, cercando parole chiave specifiche (ad esempio il nome o il cognome di un lavoratore) il sistema restituiva zero risultati, anche quando il lavoratore era effettivamente presente.
-
-**Cosa abbiamo fatto:** Il problema era dovuto a un controllo troppo rigido del nostro motore di ricerca interno, che "ignorava" i campi creati unendo più informazioni (come, appunto, il campo che unisce "Nome" e "Cognome"). Abbiamo rimosso questo limite: ora la ricerca "legge" correttamente anche i dati combinati. In questo modo le tue ricerche saranno sempre precise e non rischierai più di ritrovarti con schermate vuote senza motivo.
+### 🛡️ Download a prova di bomba (Niente più colonne "gemelle")
+A volte, scaricare un file Excel falliva misteriosamente. Indagando, abbiamo scoperto che il "colpevole" era un conflitto di identità: in alcune lingue, termini diversi venivano tradotti con la stessa identica parola (ad esempio, due colonne che si chiamavano entrambe "Nome" o "Email"), mandando in confusione il generatore del file. Abbiamo risolto questo rompicapo differenziando linguisticamente ogni singolo campo. Il risultato? Addio agli inceppamenti: la generazione dei file Excel ora è solida, stabile e a prova di crash.
 
 ---
 
-Continuiamo a lavorare per rendere il vostro lavoro quotidiano sempre più semplice e senza interruzioni. Buon proseguimento sulla piattaforma!
+**In sintesi**
+
+Dietro questo aggiornamento ci sono scritte migliaia di righe di codice, ma per te si traduce in una cosa molto semplice: esportazioni Excel rapide, affidabili e facili da leggere, in qualsiasi lingua tu scelga di lavorare.
+
+Continuate a inviarci i vostri feedback! Il prossimo aggiornamento è già in cantiere. 🛠️
